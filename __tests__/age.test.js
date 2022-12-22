@@ -25,4 +25,8 @@ describe('age-calculator', () => {
     const age = new Age(10);
     expect(age.toJupiterYears()).toBeCloseTo(.84, 1);
   });
+  test('should return planet names', () => {
+    const planets = new Age();
+    expect(age.planetYears()).toEqual(["mercury", "venus", "mars", "jupiter"]);
+  })
 });
