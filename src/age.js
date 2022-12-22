@@ -18,6 +18,18 @@ export class Age {
   toJupiterYears() {
     return this.earthYears / 11.86;
   };
+
+  yearConversion(planet) {
+    if (planet === "mercury") {
+      return this.toMercuryYears();
+    } else if (planet === "venus") {
+      return this.toVenusYears();
+    } else if (planet === "mars") {
+      return this.toMarsYears();
+    } else {
+      this.toJupiterYears;
+    }
+  }
   
   planetYears() {
     return[
