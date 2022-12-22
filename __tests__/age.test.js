@@ -11,6 +11,10 @@ describe('age-calculator', () => {
   });
   test('should convert Earth years to Mercury years', () => {
     const age = new Age(10);
-    expect(age.toMercuryYears()).toEqual(41.7);
+    expect(age.toMercuryYears()).toBeCloseTo(41.66, 1);
   });
+  test('should convert Earth years to Venus years', () => {
+    const age = new Age(10);
+    expect(age.toVenusYears()).toBeCloseTo(16.12, 1);
+  })
 });
