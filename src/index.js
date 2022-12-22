@@ -15,7 +15,7 @@ function handleAgeForm(event) {
   const mars = age.toMarsYears();
   const jupiter = age.toJupiterYears();
   const pTag = document.createElement("p");
-  pTag.append(mercury + " " + venus + " " + mars + " " + jupiter);
+  pTag.append(age + " " + mercury + " " + venus + " " + mars + " " + jupiter);
   document.querySelector('#response').append(pTag);
 }
 
