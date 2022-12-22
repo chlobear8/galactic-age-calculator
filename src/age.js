@@ -7,4 +7,8 @@ export class Age {
     return this.earthYears / .24;
   }
 
+  toVenusYears() {
+    return this.earthYears / .62;
+  }
+
 }
