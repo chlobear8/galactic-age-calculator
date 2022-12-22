@@ -18,4 +18,13 @@ export class Age {
   toJupiterYears() {
     return this.earthYears / 11.86;
   };
+  
+  planetYears() {
+    return[
+      ["mercury"],
+      ["venus"],
+      ["mars"],
+      ["jupiter"]
+    ];
+  };
 }
