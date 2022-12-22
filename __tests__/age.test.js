@@ -33,13 +33,13 @@ describe('age-calculator', () => {
     const planets = new Age();
     expect(planets.planetYears()).toEqual([["mercury", .24], ["venus", .62], ["mars", 1.88], ["jupiter", 11.86]]);
   });
-  test('should find age of planets array', () => {
+  test('should find past age of planets array', () => {
     const passed = new Age(10);
-    expect(passed.yearsPassed(5)).toBeCloseTo([
-      ["mercury", 20.83],
-      ["venus", 8.06],
-      ["mars", 2.65],
-      ["jupiter", 0.42]
-    ],1);
-  })
+    expect(passed.yearsPassed(5)[0][1]).toBeCloseTo(20.83,1);
+  });
+  test('should find future age of planets array', () => {
+    const future = new Age(10);
+    expect(future.yearsFuture(15)[0][1])
+.toBeCloseTo(20.83,1);
+})
 });
