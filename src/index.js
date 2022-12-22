@@ -10,10 +10,6 @@ function handleAgeForm(event) {
   const pastAge = parseInt(document.querySelector('#years-passed').value);
   const futureAge = parseInt(document.querySelector('#yet-passed').value);
   const age = new Age(earthYears);
-  const mercury = age.toMercuryYears();
-  const venus = age.toVenusYears();
-  const mars = age.toMarsYears();
-  const jupiter = age.toJupiterYears();
   const pTag = document.createElement("p");
   pTag.append(age + " " + mercury + " " + venus + " " + mars + " " + jupiter);
   document.querySelector('#response').append(pTag);
