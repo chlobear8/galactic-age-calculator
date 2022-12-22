@@ -16,5 +16,9 @@ describe('age-calculator', () => {
   test('should convert Earth years to Venus years', () => {
     const age = new Age(10);
     expect(age.toVenusYears()).toBeCloseTo(16.12, 1);
-  })
+  });
+  test('should convert Earth years to Mars years', () => {
+    const age = new Age(10);
+    expect(age.toMarsYears()).toBeCloseTo(5.31, 1);
+  });
 });
