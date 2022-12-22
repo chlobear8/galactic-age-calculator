@@ -21,4 +21,8 @@ describe('age-calculator', () => {
     const age = new Age(10);
     expect(age.toMarsYears()).toBeCloseTo(5.31, 1);
   });
+  test('should convert Earth years to Jupiter years', () => {
+    const age = new Age(10);
+    expect(age.toJupiterYears()).toBeCloseTo(.84, 1);
+  });
 });
