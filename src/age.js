@@ -15,4 +15,7 @@ export class Age {
     return this.earthYears / 1.88;
   };
 
+  toJupiterYears() {
+    return this.earthYears / 11.86;
+  };
 }
