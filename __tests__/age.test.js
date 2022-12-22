@@ -36,5 +36,9 @@ describe('age-calculator', () => {
   test('should take in earth years', () => {
     const passed = new Age(10);
     expect(passed.yearsPassed()).toEqual(10);
+  });
+  test('should find index of planets array', () => {
+    const passed = new Age(0, 1, 2, 3);
+    expect(passed.yearsPassed()).toEqual([0, 1, 2, 3]);
   })
 });
