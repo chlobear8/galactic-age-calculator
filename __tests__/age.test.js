@@ -27,10 +27,14 @@ describe('age-calculator', () => {
   });
   test('should return planet names', () => {
     const planets = new Age();
-    expect(planets.planetYears()).toEqual([["mercury"], ["venus"], ["mars"], ["jupiter"]]);
+    expect(planets.planetYears()).toEqual([["mercury", .24], ["venus", .62], ["mars", 1.88], ["jupiter", 11.86]]);
   });
   test('should attach the equivalent years in the planet array', () => {
     const planets = new Age();
     expect(planets.planetYears()).toEqual([["mercury", .24], ["venus", .62], ["mars", 1.88], ["jupiter", 11.86]]);
+  });
+  test('should take in earth years', () => {
+    const passed = new Age(10);
+    expect(passed.yearsPassed()).toEqual(10);
   })
 });
