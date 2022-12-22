@@ -9,4 +9,8 @@ describe('age-calculator', () => {
     const age = new Age(10);
     expect(age.earthYears).toEqual(10);
   });
+  test('should convert Earth years to Mercury years', () => {
+    const age = new Age(10);
+    expect(age.toMercuryYears()).toEqual(41.7);
+  });
 });
