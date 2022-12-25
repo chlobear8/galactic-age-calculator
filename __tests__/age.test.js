@@ -45,5 +45,5 @@ describe('age-calculator', () => {
   test('should convert earth years to planet years', () => {
     const age = new Age(10);
     expect(age.yearConversion("mercury")).toBeCloseTo(age.toMercuryYears(), 1);
-  })
+  });
 });
