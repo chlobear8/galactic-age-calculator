@@ -1,23 +1,23 @@
 export class Age {
   constructor(earthYears) {
     this.earthYears = earthYears;
-  };
+  }
 
   toMercuryYears() {
     return this.earthYears / .24;
-  };
+  }
 
   toVenusYears() {
     return this.earthYears / .62;
-  };
+  }
 
   toMarsYears() {
     return this.earthYears / 1.88;
-  };
+  }
 
   toJupiterYears() {
     return this.earthYears / 11.86;
-  };
+  }
 
   yearConversion(planet) {
     if (planet === "mercury") {
@@ -38,7 +38,7 @@ export class Age {
       ["mars", 1.88],
       ["jupiter", 11.86]
     ];
-  };
+  }
 
   yearsPassed(pastYear) {
     let age = [];
@@ -47,9 +47,9 @@ export class Age {
       let ageOnPlanet = this.earthYears /planets[i][1];
       let pastYearonPlanet = pastYear / planets[i][1];
       age.push([planets[i][0], ageOnPlanet - pastYearonPlanet]);
-      }
+    }
     return age;
-  };
+  }
 
   yearsFuture(futureYear) {
     let age = [];
@@ -58,7 +58,7 @@ export class Age {
       let ageOnPlanet = this.earthYears /planets[i][1];
       let futureYearonPlanet = futureYear / planets[i][1];
       age.push([planets[i][0], futureYearonPlanet - ageOnPlanet]);
-      }
+    }
     return age;
-  };
+  }
 }

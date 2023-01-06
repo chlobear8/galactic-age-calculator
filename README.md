@@ -39,6 +39,7 @@ This program is set up to take a users input of their age and calculate how many
 ## Known Bugs
 
 * No known bugs
+* UI not finished
 
 ## License
 
