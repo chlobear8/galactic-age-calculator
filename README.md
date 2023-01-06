@@ -29,12 +29,7 @@ This program is set up to take a users input of their age and calculate how many
 * Each test has been failed successfully then passed
 * When running tests, first write your test in the test.js file
 * Run $ npm test 
-* You should receive a successful fail
-* Then write your code that you want tested
-* After run $ npm test
-* If passing commit code
-* If not, refactor code until it passes
-
+* This will put coverage report
 
 ## Known Bugs
 
