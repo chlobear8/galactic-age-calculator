@@ -1,28 +1,30 @@
 import {Age} from './../src/age.js';
 
 describe('age-calculator', () => {
+  let age;
+
   test('should create an age object', () => {
-    const age = new Age();
+    age = new Age();
     expect(age).toBeInstanceOf(Age);
   });
   test('should take Earth years in constructor', () => {
-    const age = new Age(10);
+    age = new Age(10);
     expect(age.earthYears).toEqual(10);
   });
   test('should convert Earth years to Mercury years', () => {
-    const age = new Age(10);
+    age = new Age(10);
     expect(age.toMercuryYears()).toBeCloseTo(41.66, 1);
   });
   test('should convert Earth years to Venus years', () => {
-    const age = new Age(10);
+    age = new Age(10);
     expect(age.toVenusYears()).toBeCloseTo(16.12, 1);
   });
   test('should convert Earth years to Mars years', () => {
-    const age = new Age(10);
+    age = new Age(10);
     expect(age.toMarsYears()).toBeCloseTo(5.31, 1);
   });
   test('should convert Earth years to Jupiter years', () => {
-    const age = new Age(10);
+    age = new Age(10);
     expect(age.toJupiterYears()).toBeCloseTo(.84, 1);
   });
   test('should return planet names', () => {
@@ -43,7 +45,10 @@ describe('age-calculator', () => {
 .toBeCloseTo(20.83,1);
 });
   test('should convert earth years to planet years', () => {
-    const age = new Age(10);
+    age = new Age(10);
     expect(age.yearConversion("mercury")).toBeCloseTo(age.toMercuryYears(), 1);
+    expect(age.yearConversion("venus")).toBeCloseTo(age.toVenusYears(), 1);
+    expect(age.yearConversion("mars")).toBeCloseTo(age.toMarsYears(), 1);
+    expect(age.yearConversion("jupiter")).toBeCloseTo(age.toJupiterYears(), 1);
   });
 });
