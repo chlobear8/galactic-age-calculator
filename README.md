@@ -19,7 +19,22 @@ This program is set up to take a users input of their age and calculate how many
 
 * Clone this repository to your desktop
 * Navigate to the top level of the directory
-* Open js/index.html in your browser
+* Run $ npm install
+* Run $ npm run build
+* Run $ npm run start (this opens the project)
+
+# Interacting with Jest/TDD
+
+* Under the __tests__ directory you'll find the TDD
+* Each test has been failed successfully then passed
+* When running tests, first write your test in the test.js file
+* Run $ npm test 
+* You should receive a successful fail
+* Then write your code that you want tested
+* After run $ npm test
+* If passing commit code
+* If not, refactor code until it passes
+
 
 ## Known Bugs
 
