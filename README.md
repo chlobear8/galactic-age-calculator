@@ -10,6 +10,8 @@
 * JavaScript
 * CSS
 * Jest
+* Webpack
+* Nodepack Manager
 
 ## Description
 
